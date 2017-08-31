@@ -1,0 +1,22 @@
+#SOCIAL{
+ position: fixed;
+ z-index: 100;
+ min-width: 100%;
+ background-color:  darkgreen;
+ text-align: left;
+}
+
+#SESSION{
+  top: 2.5em;
+}
+
+body{
+  top: 10em;
+  background-color:  ivory;
+}
+
+#MENU{
+  right: 0.5em;
+  top: 0.5em;
+  z-index: 10000;
+}

@@ -1,0 +1,58 @@
+#MENU {
+  display: block;
+  position: fixed;
+  height: 1.5em;
+  width: 2em;
+  vertical-align: middle;
+}
+#MENU > div{
+  display: inline-block;
+  height: 0.3em;
+  width: 2em;
+  background-color: lightgray;
+  margin: 0.2em 0.1em;
+  border-radius: 0.2em;
+}
+
+
+.open#MENU .x1{
+    transform: translateY(0.7em) rotate(-45deg);
+}
+.open#MENU .x2 {
+  opacity: 0;
+}
+.open#MENU .x3{
+    transform: translateY(-0.7em) rotate(45deg);
+}
+
+#MENU_LIST{
+    display: none;
+}
+#MENU_LIST .open{
+    display: block;
+}
+
+#MENU_LIST .description{
+    display: none;
+}
+
+#MENU_LIST .label.open + .description {
+    display: block;
+}
+
+
+.open#MENU_LIST{
+    display: block;
+    position: fixed;
+    right:1em;
+    top:3em;
+    list-style-type: none;
+    background-color: rgba(1,1,1,0.5);
+    color: white;
+    z-index: 11000;
+    padding: 0;
+}
+.open#MENU_LIST li{
+    border-bottom: white solid 1px;
+}
+
