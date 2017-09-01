@@ -53,7 +53,9 @@ function question($text) {
           .append($YOU.serif,$YOU.face);
           
   $AI={
-    face:$("<div>", {"class": `face`}).append($("<span>", {"class": "name"})),
+    face:$("<div>", {"class": `face`})
+            .append($("<span>", {"class": "name"}))
+            .dblclick(function(){slap();}),
     serif:$("<div>", {"class": "serif", id: $id}).append($("<p>").text("ちょっと待ってね…"))
   };
 

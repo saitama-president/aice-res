@@ -12,8 +12,8 @@ class AIService{
     
     public function parseQuery($text){
         
-        $text= trim($text);
-        
+        $text= $this->Normalize($text);
+                        
         //スペシャルコマンドを検索する
         foreach(special_command_list() as $command){
             if(preg_match("/#({$command->command})/",$text)){
@@ -23,6 +23,10 @@ class AIService{
         }
         
         return $text;
+    }
+    
+    private function Normalize($text){
+        return mb_convert_kana(trim($text),"ansKCV");
     }
     
  
