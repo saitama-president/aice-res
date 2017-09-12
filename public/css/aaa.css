@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017/09/01, 19:31:10
+    Author     : s-yoshihara
+*/
+
+body { font-family: Consolas, monospace; }
+
+
+@keyframes ttt { from { width: 0; } }
+
+h1 {     
+    border-right: .1em solid;
+    width: 16.5em; /* fallback */
+    width: 30ch; /* # of chars */
+    margin: 2em 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: ttt 10s steps(10, end)
+        ,blink-caret .5s step-end infinite alternate;
+}
